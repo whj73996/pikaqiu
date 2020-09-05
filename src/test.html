@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1,maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>皮卡丘</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .html{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            min-width: 100%;
+            height: 50vh;
+        }
+        #demo{
+            display: none;
+        }
+        #demo2{
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 50vh;
+            overflow: auto;
+        }
+                                /*CSS隐藏滚动条*/
+        #demo2::-webkit-scrollbar{
+            display: none;
+        }
+        #button{
+            display: flex;
+            z-index: 3;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            flex-direction: column;
+            /*background-color: pink;*/
+        }
+        #button button{
+            width: 80px;
+            border: none;
+            height: 28px;
+            margin-bottom: 10px;
+            /*background-color: #2e2e2e;*/
+            background-color: rgba(46,46,46,.8);
+            color: white;
+            border-radius: 14px 0 0 14px;
+        }
+    </style>
+</head>
+<body>
+<style id="demo">
+</style>
+<div id="demo2"></div>
+<div id="button">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<div class="html">
+    <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+            <div class="yuan"></div>
+        </div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="mouth">
+            <div class="up">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+            </div>
+            <div class="down">
+                <div class="yuan1">
+                    <div class="yuan2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="test.js"></script>
+</body>
+</html>
